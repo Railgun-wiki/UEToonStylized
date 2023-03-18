@@ -16,6 +16,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
       
+    - name: SetMono
+      run: sudo apt-get install mono
+
     - name: Instell
       run: ./Setup.sh
     
