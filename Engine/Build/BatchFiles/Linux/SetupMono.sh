@@ -11,6 +11,7 @@ bash FixMonoFiles.sh
 bash FixDependencyFiles.sh
 
 IS_MONO_INSTALLED=0
+UE_USE_SYSTEM_MONO=1
 MONO_VERSION_PATH=$(command -v mono) || true
 if [ "$UE_USE_SYSTEM_MONO" == "1" ] && [ ! $MONO_VERSION_PATH == "" ] && [ -f $MONO_VERSION_PATH ]; then
 	# If Mono is installed, check if it's 5.0 or higher
