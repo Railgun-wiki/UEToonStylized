@@ -13,14 +13,14 @@ jobs:
       uses: actions/checkout@master
       
     - name: Instell
-    - run: ./Setup.sh
-    - run: ./GenerateProjectFiles.sh
+      run: ./Setup.sh
+      run: ./GenerateProjectFiles.sh
     
     - name: Build
-    - run: make
+      run: make
     
     - name: Tar
-    - run: tar -zcpvf Release.tar.gz ./Engine/Binaries/
+      run: tar -zcpvf Release.tar.gz ./Engine/Binaries/
     
     - name: Create Release
       id: create_release
