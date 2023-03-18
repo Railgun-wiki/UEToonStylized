@@ -3,6 +3,10 @@ on:
   push:
     tags:
       - 'v*'
+  issues:
+    types:
+      - opened
+
 
 jobs:
   build:
