@@ -17,7 +17,9 @@ jobs:
       uses: actions/checkout@master
       
     - name: SetMono
-      run: sudo apt-get install mono
+      run: |
+        sudo apt-get update
+        sudo apt-get -y install build-essential mono
 
     - name: Instell
       run: ./Setup.sh
