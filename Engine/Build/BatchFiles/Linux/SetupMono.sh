@@ -21,6 +21,7 @@ if [ "$UE_USE_SYSTEM_MONO" == "1" ] && [ ! $MONO_VERSION_PATH == "" ] && [ -f $M
 	if [ ${MONO_VERSION[0]} -ge 5 ]; then
 		if [ ${MONO_VERSION[1]} -ge 0 ] || [ ${MONO_VERSION[2]} -ge 2 ]; then
 			IS_MONO_INSTALLED=1
+			echo Mono installed
 		fi
 	fi
 fi
